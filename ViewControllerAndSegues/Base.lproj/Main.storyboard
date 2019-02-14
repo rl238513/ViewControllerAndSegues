@@ -66,6 +66,9 @@
                                 <rect key="frame" x="174" y="258" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="VC3"/>
+                                <connections>
+                                    <action selector="nvcButton:" destination="d9P-r2-jgZ" eventType="touchUpInside" id="xf1-bc-ush"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,13 +83,23 @@
             </objects>
             <point key="canvasLocation" x="1831" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="gB6-EQ-3ah">
             <objects>
-                <viewController id="NZG-GS-9gG" sceneMemberID="viewController">
+                <viewController id="NZG-GS-9gG" customClass="ThirdViewController" customModule="ViewControllerAndSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zOh-BF-iLq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6P-GR-v0u">
+                                <rect key="frame" x="168" y="318" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="home"/>
+                                <connections>
+                                    <action selector="home:" destination="NZG-GS-9gG" eventType="touchUpInside" id="M1P-jw-a4W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xa2-iG-gre"/>
                     </view>

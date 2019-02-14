@@ -24,9 +24,11 @@ class ViewController: UIViewController {
         let text = uIText.text
         let nvc = segue.destination as! SecondViewController
         nvc.passedText = text ?? "enter a value"
-        
     }
     
+    @IBAction func unwind(segue: UIStoryboardSegue){
+        
+    }
     
 }
 
